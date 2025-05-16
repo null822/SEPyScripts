@@ -1,4 +1,5 @@
 ﻿from abc import ABC, abstractmethod
+from typing import override
 
 class Shape(ABC):
     def __init__(self, c):
@@ -16,6 +17,7 @@ class Square(Shape):
         super().__init__(c)
         self.side = side
     
+    @override
     def get_area(self):
         return self.side * self.side
 
