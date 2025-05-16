@@ -1,4 +1,5 @@
 ﻿from abc import ABC, abstractmethod
+from typing import override
 
 class Shape(ABC):
     def __init__(self, c):
